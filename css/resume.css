@@ -1,0 +1,381 @@
+@page {
+    size: A4 portrait;
+}
+
+@font-face {
+    font-family: 'DejaVu Sans ExtraLight';
+    src: url('../fonts/DejaVuSans-ExtraLight-webfont.eot');
+    src: url('../fonts/DejaVuSans-ExtraLight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DejaVuSans-ExtraLight-webfont.woff2') format('woff2'),
+         url('../fonts/DejaVuSans-ExtraLight-webfont.woff') format('woff'),
+         url('../fonts/DejaVuSans-ExtraLight-webfont.ttf') format('truetype'),
+         url('../fonts/DejaVuSans-ExtraLight-webfont.svg#dejavu_sansextralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-size: 10pt;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "DejaVu Sans", Arial;
+    font-size: 10pt;
+    background-color: #eee;
+    margin: 5px;
+}
+
+nav#toolbar {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+a.toolbar-btn {
+    padding: 2px;
+}
+
+a.toolbar-btn svg.icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+div#wrapper {
+    background-color: white;
+    width: 21cm;
+    padding: 1cm;
+    border: 1px solid #ccc;
+    margin: auto;
+}
+
+
+h1 {
+    font-family: "DejaVu Sans ExtraLight", "DejaVu Sans", Arial;
+    color: #009cde;
+    font-size: 16pt;
+    font-weight: normal;
+    margin: 1cm 0 .5cm 0;
+    padding: 0 0 .2cm 0;
+}
+
+h2 {
+    font-family: "DejaVu Sans ExtraLight", "DejaVu Sans", Arial;
+    color: #009cde;
+    font-size: 14pt;
+    font-weight: normal;
+    width: 100%;
+    display: block;
+    margin: 10pt 0 6pt 0;
+    padding: 0;
+    page-break-after: avoid;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.col-6 {
+    width: 50%;
+    float: left;
+}
+
+
+
+
+header {
+    clear: both;
+    overflow: hidden;
+    padding-top: 0.2cm;
+    font-size: 8pt;
+    line-height: 180%;
+}
+
+header div.name { width: 33.33%; float: left; clear: none; }
+header h1 { margin: 0; }
+header h3.subtitle {
+    font-family: "DejaVu Sans ExtraLight", "DejaVu Sans", Arial;
+    font-size: 12pt;
+    margin: 0;
+}
+
+header div.address { width: 33.33%; float: left; clear: none; }
+header div.address p { margin: 0; color: #777; }
+
+header div.contact { width: 33.33%; float: left; clear: none; }
+header div.contact p { margin: 0; color: #777; }
+header div.contact a { color: #777; }
+
+main {
+    columns: 2;
+    column-gap: 1.5cm;
+}
+
+section {
+    display: inline-block;
+    page-break-inside: avoid;
+    margin: .5cm 0 0 0;
+    padding: 0;
+}
+
+
+/* Timeline */
+
+div.timeline {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+div.timeline:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 3cm;
+    width: 2px;
+    background-color: #999;
+}
+
+div.timeline:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 3cm;
+    margin-left: -2px;
+    border-radius: 4px;
+    background-color: #999;
+    width: 6px;
+    height: 6px;
+}
+
+div.timeline div.item {
+    padding: 0 0 .3cm 4cm;
+    position: relative;
+}
+
+div.timeline div.item:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 3cm;
+    width: 10px;
+    height: 10px;
+    margin-left: -4px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #999;
+}
+
+div.timeline div.time {
+    display: block;
+    position: absolute;
+    text-align: right;
+    width: 2cm;
+    left: 0;
+    font-size: 8pt;
+}
+
+
+
+/* Experience */
+
+section#experience div.item div.time {
+    font-family: "DejaVu Sans ExtraLight", "DejaVu Sans", Arial;
+    font-size: 8pt;
+}
+
+section#experience div.item span.title {
+    display: block;
+}
+
+section#experience div.item span.organization {
+    display: block;
+    font-weight: bold;
+    margin: 3pt 0 3pt 0;
+}
+
+section#experience div.item span.location {
+    display: block;
+    font-style: italic;
+}
+
+
+/* Education */
+
+section#education {
+    /* break-after: column; */
+}
+
+section#education div.item div.time {
+    font-family: "DejaVu Sans ExtraLight", "DejaVu Sans", Arial;
+    font-size: 16pt;
+    margin: 0 0 .2cm 0;
+}
+
+section#education span.organization {
+    display: block;
+    font-weight: bold;
+    margin: 3pt 0 3pt 0;
+}
+
+section#education span.location {
+    display: block;
+    font-style: italic;
+    margin: 3pt 0 3pt 0;
+}
+
+section#education span.title {
+    margin: 3pt 0 3pt 0;
+}
+
+
+section#education p {
+    margin-top: 3pt;
+}
+
+
+/* Certificates */
+
+section#certificates {
+    /* break-after: column; */
+}
+
+section#certificates div.item div.time {
+    font-family: "DejaVu Sans ExtraLight", "DejaVu Sans", Arial;
+    font-size: 16pt;
+    margin: 0 0 .2cm 0;
+}
+
+section#certificates span.organization {
+    display: block;
+    font-weight: bold;
+    margin: 3pt 0 3pt 0;
+}
+
+section#certificates span.location {
+    display: block;
+    font-style: italic;
+    margin: 3pt 0 3pt 0;
+}
+
+section#certificates p {
+    margin: 3pt 0 3pt 0;
+    line-height: 150%;    
+}
+
+
+
+/* Computer skills */
+
+section#skills {
+    clear: both;
+    overflow: auto;
+
+}
+
+section#skills div.item {
+    float: left;
+    clear: none;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 0.5em;
+}
+
+section#skills div.item div.icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #d2d3d4;
+    border-radius: 30px;
+    margin: 10pt 0 10pt 0;
+    position: relative;
+}
+
+section#skills div.item svg.icon {
+    position: absolute;
+    color: black;
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    left: 50%;
+    margin-top: -12px;
+    margin-left: -12px;
+}
+
+section#skills div.item h3 {
+    margin: 3pt 0 3pt 0;
+    font-size: 10pt;
+}
+
+section#skills div.item p {
+    margin: 3pt 0 3pt 0;
+    line-height: 150%;
+}
+
+
+/* Languages */
+
+section#languages div.item {
+    position: relative;
+    float: left;
+    clear: none;
+    box-sizing: border-box;
+    width: 33.33%;
+
+}
+
+section#languages div.item div.donut {
+    width: 125px;
+    margin: auto;
+}
+
+.chart-text {
+    fill: #000;
+    transform: translateY(0.25em);
+}
+
+.chart-number {
+    font-weight: bold;
+    text-anchor: middle;
+    transform: translateY(-0.25em);
+}
+
+.chart-label {
+    font-size: 8pt;
+    text-anchor: middle;
+    transform: translateY(1.2em);
+}
+
+
+
+
+
+
+
+/* Icomoon */
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.icon-connection {
+    width: 1.25em;
+}
+
+.icon-embed2 {
+    width: 1.25em;
+}

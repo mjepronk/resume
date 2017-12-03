@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+
+div#wrapper {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    border: none;
+    margin: none;
+}
+
+nav#toolbar {
+    display: none;
+}

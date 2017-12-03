@@ -1,0 +1,29 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "My resume in HTML.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjepronk/resume.git"
+  },
+  "keywords": [
+    "resume",
+    "CV",
+    "curriculum",
+    "vitae",
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "author": "Matthias Pronk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mjepronk/resume/issues"
+  },
+  "homepage": "https://github.com/mjepronk/resume#readme",
+  "dependencies": {
+    "args": "^3.0.8",
+    "puppeteer": "^0.13.0",
+    "yargs": "^10.0.3"
+  }
+}

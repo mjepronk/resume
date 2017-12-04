@@ -19,7 +19,7 @@ var argv = require('yargs')
   .describe('b', 'Print background')
   .boolean('b')
   .alias('b', 'printBackground')
-  .default('b', true)
+  .default('b', false)
   .argv;
 
 (async () => {

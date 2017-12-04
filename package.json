@@ -24,6 +24,7 @@
   "dependencies": {
     "args": "^3.0.8",
     "puppeteer": "^0.13.0",
+    "source-sans-pro": "^2.0.10",
     "yargs": "^10.0.3"
   }
 }

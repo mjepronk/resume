@@ -16,15 +16,15 @@
     "JavaScript"
   ],
   "author": "Matthias Pronk",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mjepronk/resume/issues"
   },
   "homepage": "https://github.com/mjepronk/resume#readme",
   "dependencies": {
-    "args": "^3.0.8",
-    "puppeteer": "^1.7.0",
-    "source-sans-pro": "^2.20.2",
-    "yargs": "^12.0.1"
+    "puppeteer-core": "^1.20.0",
+    "which": "^2.0.1",
+    "yargs": "^14.2.0",
+    "source-sans-pro": "^2.20.2"
   }
 }
